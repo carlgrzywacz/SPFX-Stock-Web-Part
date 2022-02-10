@@ -1,0 +1,77 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+.stockTicker {
+  .stock {
+    border: 1px solid;
+    border-color: $ms-color-neutralLight;
+    padding: 16px;
+    position: relative;
+
+    .stockSymbol {
+      text-align: right;
+    }
+
+    .stockHeaderRow{
+      display: flex;
+    }
+
+    .stockHeaderColumn {
+      flex: 50%;
+      color: $ms-color-themePrimary;
+      @include ms-font-m-plus;
+      @include ms-fontWeight-semibold;
+      // margin-bottom: 12px;
+    }
+
+    .stockDetails {
+      @include ms-font-s;
+      color: $ms-color-neutralSecondary;
+      flex: 33.3%;
+      margin-top: 4px;
+    }
+
+    .stockTrend, .stockValue {
+      @include ms-font-m-plus;
+      @include ms-fontWeight-semibold;
+      padding-right: 0.5em;
+    }
+
+    .stockInfo {
+      @include ms-font-s;
+      color: $ms-color-neutralSecondary;
+      margin-top: 4px;
+
+      span {
+        padding-right: 0.85em;
+      }
+    }
+
+    .more {
+      position: absolute;
+      bottom: 14px;
+      right: 14px;
+      color: $ms-color-themePrimary;
+      @include ms-font-m;
+      @include ms-fontWeight-semibold;
+    }
+  }
+
+  .pill {
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 16px;
+  }
+
+  .stockUp {
+    background-color: rgb(43, 207, 28);
+  }
+
+  .stockDown {
+    background-color: rgb(245, 49, 49);
+  }
+}
